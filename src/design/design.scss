@@ -1,11 +1,10 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+@import "./lib/variables";
 
+html,
 body {
   height: 100%;
   width: 100%;
+  color: $textColor;
 }
 
 header,
@@ -13,7 +12,7 @@ footer {
   position: fixed;
   height: 50px;
   width: 100%;
-  background-color: rgba($color: #999999, $alpha: 1);
+  background-color: rgba($accentColor, $alpha: 1);
   font-size: 1.5em;
   display: flex;
   justify-content: center;
@@ -26,8 +25,11 @@ header {
 
 main {
   margin: 60px auto 60px auto;
-  width: 90%;
   line-height: 1.2;
+
+  > p {
+    margin: $space;
+  }
 }
 
 footer {
