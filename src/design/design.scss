@@ -1,5 +1,5 @@
 @import "./lib/variables";
-
+@import "./lib/mixins";
 html,
 body {
   height: 100%;
@@ -14,9 +14,7 @@ footer {
   width: 100%;
   background-color: rgba($accentColor, $alpha: 1);
   font-size: 1.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox;
 }
 
 header {
