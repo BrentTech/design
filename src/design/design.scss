@@ -1,36 +1,5 @@
 @import "./lib/variables";
 @import "./lib/mixins";
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  color: $textColor;
-}
-
-header,
-footer {
-  position: fixed;
-  height: 50px;
-  width: 100%;
-  background-color: rgba($accentColor, $alpha: 1);
-  font-size: 1.5em;
-  @include flexbox;
-}
-
-header {
-  top: 0;
-}
-
-main {
-  margin: 60px auto 60px auto;
-  line-height: 1.2;
-
-  > p {
-    margin: $space;
-  }
-}
-
-footer {
-  bottom: 0;
-}
+@import "./core/base";
+@import "./core/header";
+@import "./core/footer";
