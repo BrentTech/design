@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import content from './content.json';
+import content from "./content.json";
 
-import Deck from '../deck/deck.js';
+import Deck from "../deck/deck.js";
 
 const Content = props => {
   return (
@@ -21,20 +21,40 @@ const Content = props => {
         volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
         luctus, metus
       </p>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-        ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-        egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
-        leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-        erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
-        fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-        sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar
-        facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
-        neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat
-        volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-        luctus, metus
-      </p>
+      <form>
+        <fieldset>
+          <label>
+            <span>First Name</span>
+            <input name="firstname" type="text" />
+          </label>
+          <label>
+            <span>Last Name</span>
+            <input name="lastname" type="text" />
+          </label>
+          <label>
+            <span>Fruits</span>
+            <select name="fruit">
+              <option value="apple"> Apple </option>
+              <option value="orange"> Orange </option>
+              <option value="kiwi"> Kiwi </option>
+              <option value="pear"> Pear </option>
+              <option value="plum"> Plum </option>
+            </select>
+          </label>
+          <label>
+            <span>Life Story</span>
+            <textarea name="lifestory" rows="5" cols="20" />
+          </label>
+          <label>
+            <span>Cool Human?</span>
+            <input name="socool" type="checkbox" />
+          </label>
+          <label>
+            <span>Pick Me!</span>
+            <input name="correct" type="radio" value="1" />
+          </label>
+        </fieldset>
+      </form>
       <p>
         Pellentesque habitant morbi tristique senectus et netus et malesuada
         fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
