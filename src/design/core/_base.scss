@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: $textColor;
+}
+
+main {
+  margin: 60px auto 60px auto;
+  line-height: 1.2;
+
+  > p {
+    margin: $space;
+  }
+}
