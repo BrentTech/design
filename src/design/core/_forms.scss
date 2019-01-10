@@ -1,0 +1,15 @@
+input,
+select,
+textarea {
+  @include border-radius(3px);
+  margin: 5px;
+  background-color: whitesmoke;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  @include border-radius(3px);
+  margin: 5px;
+  background-color: white;
+}
