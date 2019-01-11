@@ -32,6 +32,14 @@ const Content = props => {
             <input name="lastname" type="text" />
           </label>
           <label>
+            <span>Age</span>
+            <input name="age" type="number" />
+          </label>
+          <label>
+            <span>Stress Level (1 - 10)</span>
+            <input name="stress" type="range" />
+          </label>
+          <label>
             <span>Fruits</span>
             <select name="fruit">
               <option value="apple"> Apple </option>
