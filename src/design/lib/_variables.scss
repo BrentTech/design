@@ -4,3 +4,9 @@ $textColor: #111;
 $bleed: #b5ffb3;
 
 $space: 1.4em;
+
+$breakpoints: (
+  phone: 640px,
+  tablet: 768px,
+  desktop: 1024px
+) !default;
