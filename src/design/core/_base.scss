@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: $textColor;
+}
+
+main {
+  margin: 60px auto 60px auto;
+  line-height: 1.2;
+  background-color: whitesmoke;
+
+  > p {
+    margin: $space;
+  }
+}
+
+@include respond-to(tablets) {
+  main {
+    background-color: gainsboro;
+  }
+}
+@include respond-to(desktops) {
+  main {
+    background-color: beige;
+  }
+}
